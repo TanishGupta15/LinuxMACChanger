@@ -16,3 +16,7 @@ I have used 3 python modules:
   3. re         - To identify MAC address using regular expressions
 
 
+
+PS: You can only change the MAC address to a Unicast MAC Address i.e. the first octet has to have an even value.
+
+

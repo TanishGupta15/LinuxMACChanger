@@ -36,7 +36,7 @@ def get_current_mac(interface):
     # This command captures the output of the terminal command - "ifconfig $interface"
     mac_address_search_result = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", ifconfig_result.decode('utf-8'))
     # regex expression that finds the mac address. \w stands for alphanumeric character.
-    # Decode the result into UTF-8 string.
+    # Decode the ifconfig_result into UTF-8 string, to be compatible for finding regex.
     if mac_address_search_result:
         return mac_address_search_result.group(0)
         # If there are a number of matches, they are put in groups. Interested in only first occurance.

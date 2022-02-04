@@ -1,5 +1,5 @@
-# Linux MAC Changer
-A simple python script that can be run in Linux environment to change default MAC address to any desired  MAC address.
+# Linux MAC Address Changer over a network
+A simple python script that can be run in Linux environment to change default MAC address to any desired MAC address over a particular interface.
 
 Usage:
 
